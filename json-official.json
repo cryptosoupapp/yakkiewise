@@ -1,0 +1,695 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "yakkie wise",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "cancel now",
+                        "please cancel",
+                        "cancel please",
+                        "please do cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "I want help",
+                        "I need help please",
+                        "help please",
+                        "I need help",
+                        "help me please",
+                        "help me",
+                        "help",
+                        "please help",
+                        "please help me",
+                        "what can I do",
+                        "what can you do",
+                        "how to start",
+                        "where should I start",
+                        "what now",
+                        "now what"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "silence",
+                        "go away",
+                        "stop",
+                        "please stop",
+                        "bye bye",
+                        "quit",
+                        "exit",
+                        "abort",
+                        "shut up",
+                        "quiet"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "definitely yes",
+                        "of course why not",
+                        "yeah why not",
+                        "yes why not",
+                        "sure why not",
+                        "yes i do",
+                        "certainly yes",
+                        "certainly",
+                        "why not",
+                        "of course please",
+                        "yeah sure",
+                        "ok sure",
+                        "all right",
+                        "okey",
+                        "ok",
+                        "yes",
+                        "yeah",
+                        "sure",
+                        "I do",
+                        "hell yes",
+                        "hell yeah",
+                        "of course",
+                        "yes please",
+                        "bring it on",
+                        "yup"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "not really",
+                        "no that's all",
+                        "no that is enough",
+                        "no that's enough thank you",
+                        "no that's enough thanks",
+                        "no that's enough",
+                        "nop",
+                        "how about no",
+                        "that's enough thank you",
+                        "that's enough thanks",
+                        "not now thank you",
+                        "not now thanks",
+                        "that's enough for now",
+                        "no that's enough for now",
+                        "another time",
+                        "maybe later",
+                        "no",
+                        "nope",
+                        "neah",
+                        "no thanks",
+                        "hell no",
+                        "no way",
+                        "not",
+                        "not now",
+                        "not interested",
+                        "later"
+                    ]
+                },
+                {
+                    "name": "GetCategoryFactIntent",
+                    "slots": [
+                        {
+                            "name": "factCategory",
+                            "type": "factType",
+                            "samples": [
+                                "{factCategory}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{factCategory} please",
+                        "A {factCategory} sounds good",
+                        "let's try a {factCategory} this time",
+                        "let's try a {factCategory} instead",
+                        "Let's try a {factCategory} now",
+                        "Let's go with a {factCategory} this time",
+                        "I'll go with a {factCategory} please",
+                        "I'll go with a {factCategory} now",
+                        "I want you to tell me a {factCategory} please",
+                        "I want you to tell me a {factCategory}",
+                        "A {factCategory} would be perfect",
+                        "I'll try a {factCategory} now",
+                        "I will try a {factCategory} now",
+                        "I'll try a {factCategory} please",
+                        "I will try a {factCategory} please",
+                        "I'll try a {factCategory}",
+                        "I will try a {factCategory}",
+                        "try {factCategory} please",
+                        "try a {factCategory} now",
+                        "try {factCategory}",
+                        "sure let's try a {factCategory}",
+                        "Let's hear a {factCategory} instead",
+                        "I'd like to try a {factCategory} please",
+                        "I would like to try a {factCategory} please",
+                        "I'd like to try a {factCategory}",
+                        "I would like to try a {factCategory}",
+                        "try a {factCategory} please",
+                        "let's try a {factCategory} please",
+                        "try a {factCategory}",
+                        "hear another {factCategory} please",
+                        "hear another {factCategory}",
+                        "tell me another {factCategory}",
+                        "another {factCategory} sounds good",
+                        "another {factCategory} sounds great",
+                        "let's go with one more {factCategory}",
+                        "let's hear one more {factCategory} please",
+                        "let's hear one more {factCategory}",
+                        "one more {factCategory} please",
+                        "one more {factCategory}",
+                        "i want another {factCategory} please",
+                        "i want another {factCategory}",
+                        "let's go with another {factCategory}",
+                        "another {factCategory} would be awesome",
+                        "another {factCategory} would be great",
+                        "let's hear another {factCategory} please",
+                        "let's hear another {factCategory}",
+                        "another {factCategory} please",
+                        "another {factCategory}",
+                        "for a {factCategory}",
+                        "a {factCategory}",
+                        "Let's hear a Bitcoin {factCategory} please",
+                        "Let's hear a {factCategory} please",
+                        "Sure let's hear a Bitcoin {factCategory}",
+                        "Sure let's hear a {factCategory}",
+                        "One {factCategory} please",
+                        "One Bitcoin {factCategory} please",
+                        "Bitcoin {factCategory} please",
+                        "How about a Bitcoin {factCategory}",
+                        "A Bitcoin {factCategory} I think",
+                        "Bitcoin {factCategory} sounds good",
+                        "Bitcoin {factCategory} sounds great",
+                        "Bitcoin {factCategory} sounds nice",
+                        "A Bitcoin {factCategory} would be awesome",
+                        "A {factCategory} sounds just right",
+                        "A {factCategory} would be awesome",
+                        "{factCategory} sounds nice",
+                        "{factCategory} sounds great",
+                        "{factCategory} sounds good",
+                        "A {factCategory} I think",
+                        "A {factCategory} sounds perfect",
+                        "How about a {factCategory}",
+                        "Let's say a {factCategory}",
+                        "Let's say {factCategory}",
+                        "Let's pick {factCategory}",
+                        "Let's choose {factCategory}",
+                        "Let's go with {factCategory}",
+                        "Let's go with a {factCategory}",
+                        "Let's choose a {factCategory}",
+                        "Let's pick a {factCategory}",
+                        "I'll pick a {factCategory}",
+                        "I'll choose a {factCategory}",
+                        "I'll go with a {factCategory}",
+                        "A {factCategory} would be amazing please",
+                        "A {factCategory} would be nice please",
+                        "A {factCategory} would be great please",
+                        "A {factCategory} would be amazing",
+                        "A {factCategory} would be nice",
+                        "A {factCategory} would be great",
+                        "I would appreciate a {factCategory}",
+                        "I would love a {factCategory}",
+                        "I would enjoy a {factCategory}",
+                        "A {factCategory} sounds great",
+                        "I'm in the mood for a {factCategory}",
+                        "I feel like hearing a {factCategory} please",
+                        "I feel like hearing a {factCategory}",
+                        "Just a {factCategory} please",
+                        "A {factCategory} please",
+                        "Hit me with a {factCategory}",
+                        "I want to learn a {factCategory}",
+                        "Please get me a {factCategory}",
+                        "Let's see a {factCategory}",
+                        "Let's hear a {factCategory}",
+                        "Let's try a {factCategory}",
+                        "I would like to learn a {factCategory}",
+                        "I would like to hear a {factCategory}",
+                        "I want to hear a {factCategory}",
+                        "Please tell me a {factCategory}",
+                        "I want a {factCategory}",
+                        "{factCategory}",
+                        "Tell me a {factCategory}",
+                        "Get me a {factCategory}",
+                        "Let's say a Bitcoin {factCategory}",
+                        "Let's say Bitcoin {factCategory}",
+                        "Let's pick Bitcoin {factCategory}",
+                        "Let's choose Bitcoin {factCategory}",
+                        "Let's go with Bitcoin {factCategory}",
+                        "Let's go with a Bitcoin {factCategory}",
+                        "Let's choose a Bitcoin {factCategory}",
+                        "Let's pick a Bitcoin {factCategory}",
+                        "I'll pick a Bitcoin {factCategory}",
+                        "I'll choose a Bitcoin {factCategory}",
+                        "I'll go with a Bitcoin {factCategory}",
+                        "A Bitcoin {factCategory} would be amazing please",
+                        "A Bitcoin {factCategory} would be nice please",
+                        "A Bitcoin {factCategory} would be great please",
+                        "A Bitcoin {factCategory} would be amazing",
+                        "A Bitcoin {factCategory} would be nice",
+                        "A Bitcoin {factCategory} would be great",
+                        "I would appreciate a Bitcoin {factCategory}",
+                        "I would love a Bitcoin {factCategory}",
+                        "I would enjoy a Bitcoin {factCategory}",
+                        "A Bitcoin {factCategory} sounds great",
+                        "I'm in the mood for a Bitcoin {factCategory}",
+                        "I feel like hearing a Bitcoin {factCategory} please",
+                        "I feel like hearing a Bitcoin {factCategory}",
+                        "Just a Bitcoin {factCategory} please",
+                        "A Bitcoin {factCategory} please",
+                        "Hit me with a Bitcoin {factCategory}",
+                        "I want to learn a Bitcoin {factCategory}",
+                        "Please get me a Bitcoin {factCategory}",
+                        "Let's see a Bitcoin {factCategory}",
+                        "Let's hear a Bitcoin {factCategory}",
+                        "Let's try a Bitcoin {factCategory}",
+                        "I would like to learn a Bitcoin {factCategory}",
+                        "I would like to hear a Bitcoin {factCategory}",
+                        "I want to hear a Bitcoin {factCategory}",
+                        "Please tell me a Bitcoin {factCategory}",
+                        "I want a Bitcoin {factCategory}",
+                        "Bitcoin {factCategory}",
+                        "Tell me a Bitcoin {factCategory}",
+                        "Get me a Bitcoin {factCategory}"
+                    ]
+                },
+                {
+                    "name": "ShoppingIntent",
+                    "slots": [],
+                    "samples": [
+                        "what is there to buy",
+                        "anything to buy",
+                        "what can i purchase now",
+                        "what can i buy now",
+                        "what could i purchase",
+                        "what should i purchase",
+                        "can i purchase something",
+                        "what is available for purchase",
+                        "what is available to purchase",
+                        "what to purchase",
+                        "what do you suggest",
+                        "what do you recommend",
+                        "what should i buy",
+                        "what could I buy",
+                        "what to buy",
+                        "what can i purchase",
+                        "can i buy something",
+                        "i want to buy something",
+                        "what is available to buy",
+                        "what can i buy"
+                    ]
+                },
+                {
+                    "name": "BuyIntent",
+                    "slots": [
+                        {
+                            "name": "productCategory",
+                            "type": "factType"
+                        }
+                    ],
+                    "samples": [
+                        "I want to purchase {productCategory}",
+                        "I want to purchase {productCategory} now",
+                        "let's buy {productCategory}",
+                        "how do i buy {productCategory}",
+                        "purchase {productCategory}",
+                        "purchase {productCategory} now",
+                        "buy {productCategory}",
+                        "buy {productCategory} now",
+                        "I want to buy {productCategory}",
+                        "let's buy the {productCategory} pack",
+                        "how do i buy the {productCategory} pack",
+                        "Can I buy the {productCategory} pack",
+                        "purchase the {productCategory} pack",
+                        "buy the {productCategory} pack",
+                        "I want to buy {productCategory} pack",
+                        "I want to buy the {productCategory} pack",
+                        "buy the {productCategory} pack now",
+                        "buy the {productCategory} pack please",
+                        "buy {productCategory} please",
+                        "let's buy the {productCategory}"
+                    ]
+                },
+                {
+                    "name": "ProductDetailIntent",
+                    "slots": [
+                        {
+                            "name": "productCategory",
+                            "type": "factType",
+                            "samples": [
+                                "{productCategory} pack",
+                                "Tell me about a {productCategory} pack",
+                                "Tell me about the {productCategory} pack",
+                                "Tell me about {productCategory} pack"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{productCategory} please",
+                        "tell me about {productCategory} please",
+                        "more about {productCategory} please",
+                        "tell me about {productCategory}",
+                        "{productCategory}",
+                        "more about the {productCategory} product",
+                        "more about the {productCategory} pack",
+                        "more about {productCategory}",
+                        "{productCategory} product",
+                        "{productCategory} pack",
+                        "tell me about the {productCategory} pack",
+                        "tell me more about {productCategory} please",
+                        "tell me more about {productCategory}",
+                        "tell me more about premium {productCategory}",
+                        "tell me more about {productCategory} premium",
+                        "tell me more about {productCategory} pack",
+                        "tell me more about the {productCategory} pack",
+                        "tell me more about {productCategory} product",
+                        "tell me about {productCategory} product",
+                        "tell me about {productCategory} pack",
+                        "learn about the {productCategory} pack",
+                        "learn more about {productCategory} please",
+                        "learn more about {productCategory}",
+                        "learn more about premium {productCategory}",
+                        "learn more about {productCategory} premium",
+                        "learn more about {productCategory} pack",
+                        "learn more about the {productCategory} pack",
+                        "learn more about {productCategory} product",
+                        "learn about {productCategory} product",
+                        "learn about {productCategory} pack",
+                        "tell me more about the {productCategory} please",
+                        "tell me more about the {productCategory}",
+                        "tell me more about the {productCategory} premium",
+                        "tell me more about the {productCategory} product",
+                        "tell me about the {productCategory} product",
+                        "learn more about the {productCategory} please",
+                        "learn more about the {productCategory}",
+                        "learn more about the {productCategory} premium",
+                        "learn more about the {productCategory} product",
+                        "learn about the {productCategory} product",
+                        "i want to learn more about {productCategory}",
+                        "i want to learn more about {productCategory} pack",
+                        "i want to learn more about the {productCategory} pack",
+                        "i want to learn more about the {productCategory} product",
+                        "i want to learn more about {productCategory} please"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetFactIntent",
+                    "slots": [
+                        {
+                            "name": "fact",
+                            "type": "basicFact"
+                        }
+                    ],
+                    "samples": [
+                        "I'd like to hear a {fact}",
+                        "I'd like a {fact}",
+                        "I'd like a free {fact} please",
+                        "I'd like a free {fact} ",
+                        "I would love a free {fact}",
+                        "I'd love a free {fact}",
+                        "just a free {fact} sounds great",
+                        "just a free {fact} sounds good",
+                        "just a {fact} please",
+                        "just a {fact}",
+                        "I want just a free {fact} please",
+                        "I would like just a free {fact}",
+                        "I want just a free {fact}",
+                        "just a free {fact} please",
+                        "just a free {fact}",
+                        "I would like a random {fact} please",
+                        "I want a random {fact} please",
+                        "a random {fact} sounds good",
+                        "a random {fact} sounds great",
+                        "I would like a random {fact}",
+                        "I want a random {fact}",
+                        "random {fact} sounds great",
+                        "a random {fact} please",
+                        "random {fact}",
+                        "a random {fact}",
+                        "one more {fact}",
+                        "just one more {fact}",
+                        "just another {fact} please",
+                        "for a {fact}",
+                        "a {fact}",
+                        "just another {fact}",
+                        "just another bitcoin {fact}",
+                        "another free {fact} please",
+                        "another bitcoin {fact} please",
+                        "another bitcoin {fact}",
+                        "another free bitcoin {fact} please",
+                        "another free bitcoin {fact}",
+                        "another free {fact}",
+                        "another {fact} please",
+                        "another {fact}",
+                        "give me another {fact} please",
+                        "tell me another {fact} please",
+                        "i want another {fact} instead",
+                        "tell me another {fact}",
+                        "give me another {fact}",
+                        "i would like a {fact} please",
+                        "i would like a {fact}",
+                        "i want a bitcoin {fact} please",
+                        "i want a bitcoin {fact}",
+                        "i want a {fact}",
+                        "tell a bitcoin {fact} please",
+                        "{fact} about bitcoin",
+                        "bitcoin {fact}",
+                        "tell a bitcoin {fact}",
+                        "give me a bitcoin {fact} please",
+                        "tell me a bitcoin {fact} please",
+                        "give me a bitcoin {fact}",
+                        "tell me a Bitcoin {fact}",
+                        "give me a {fact}",
+                        "tell me a {fact}",
+                        "let's hear a {fact}",
+                        "throw a {fact} at me",
+                        "give me a {fact} please",
+                        "tell a {fact} please",
+                        "tell me a {fact} please",
+                        "tell us a {fact}",
+                        "{fact} tell",
+                        "tell a {fact}",
+                        "read {fact}",
+                        "read a {fact}",
+                        "give me another free {fact} please",
+                        "tell me another free {fact} please",
+                        "i want another free {fact} instead",
+                        "tell me another free {fact}",
+                        "give me another free {fact}",
+                        "i would like a free {fact} please",
+                        "i would like a free {fact}",
+                        "i want a bitcoin free {fact} please",
+                        "i want a bitcoin free {fact}",
+                        "i want a free {fact}",
+                        "tell a bitcoin free {fact} please",
+                        "free {fact} about bitcoin",
+                        "bitcoin free {fact}",
+                        "tell a bitcoin free {fact}",
+                        "give me a bitcoin free {fact} please",
+                        "tell me a bitcoin free {fact} please",
+                        "give me a bitcoin free {fact}",
+                        "tell me a Bitcoin free {fact}",
+                        "give me a free {fact}",
+                        "tell me a free {fact}",
+                        "let's hear a free {fact}",
+                        "throw a free {fact} at me",
+                        "give me a free {fact} please",
+                        "tell a free {fact} please",
+                        "tell me a free {fact} please",
+                        "tell us a free {fact}",
+                        "free {fact} tell",
+                        "tell a free {fact}",
+                        "read free {fact}",
+                        "read a free {fact}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "can you repeat",
+                        "say it once again please",
+                        "say it once again",
+                        "once again please",
+                        "once again",
+                        "one more time please",
+                        "one more time",
+                        "i want to hear that again",
+                        "i want to hear it again",
+                        "say it again please",
+                        "say it again",
+                        "please replay",
+                        "replay please",
+                        "replay",
+                        "let's hear it once again",
+                        "please repeat that",
+                        "please repeat",
+                        "say that again please",
+                        "can you say that again",
+                        "say what",
+                        "what's that",
+                        "I didn't understand",
+                        "I did not get that",
+                        "I didn't get that",
+                        "what was that again"
+                    ]
+                },
+                {
+                    "name": "WhatDidIBuy",
+                    "slots": [],
+                    "samples": [
+                        "what are my premium products",
+                        "what premium products do i have",
+                        "what have i just purchased",
+                        "what have i purchased",
+                        "what did i just purchased",
+                        "what did i purchased",
+                        "what have i just bought",
+                        "what did i just buy",
+                        "what have i bought",
+                        "what did i buy"
+                    ]
+                },
+                {
+                    "name": "RefundIntent",
+                    "slots": [
+                        {
+                            "name": "productCategory",
+                            "type": "factType"
+                        }
+                    ],
+                    "samples": [
+                        "please refund {productCategory}",
+                        "please refund the {productCategory} pack",
+                        "please cancel {productCategory}",
+                        "please cancel the {productCategory} pack",
+                        "I would like a refund for the {productCategory} pack",
+                        "I would like to cancel the {productCategory} pack",
+                        "I would like a refund for {productCategory}",
+                        "I would like to cancel {productCategory}",
+                        "I want to cancel {productCategory}",
+                        "I want to cancel {productCategory} now",
+                        "cancel {productCategory}",
+                        "cancel {productCategory} now",
+                        "I wanna cancel the {productCategory} pack",
+                        "cancel the {productCategory} pack",
+                        "I want to cancel {productCategory} pack",
+                        "I want to cancel the {productCategory} pack",
+                        "cancel the {productCategory} pack now",
+                        "cancel the {productCategory} pack please",
+                        "cancel {productCategory} please",
+                        "I want to refund {productCategory} now",
+                        "refund {productCategory}",
+                        "refund {productCategory} now",
+                        "I want to refund {productCategory}",
+                        "Can I refund the {productCategory} pack",
+                        "refund the {productCategory} pack",
+                        "I want to refund {productCategory} pack",
+                        "I want to refund the {productCategory} pack",
+                        "refund the {productCategory} pack now",
+                        "refund the {productCategory} pack please",
+                        "refund {productCategory} please"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "factType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "legend",
+                                "synonyms": [
+                                    "legends",
+                                    "premium legends",
+                                    "premium legend",
+                                    "premium"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "basicFact",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "fact",
+                                "synonyms": [
+                                    "bitcoin facts",
+                                    "bitcoin fact",
+                                    "facts"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GetCategoryFactIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "factCategory",
+                            "type": "factType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.339715283752.1159186034704"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ProductDetailIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "productCategory",
+                            "type": "factType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.592643468739.613787488648"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.339715283752.1159186034704",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Would you like a Bitcoin fact or a Bitcoin legend?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.592643468739.613787488648",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Tell me the name of the product you would like to learn more about. For example, you could say, 'Tell me about Premium Legends'"
+                    }
+                ]
+            }
+        ]
+    }
+}
